@@ -1,0 +1,104 @@
+/* ===== Theme colours ===== */
+:root {
+  --bg-dark: #12122b;
+  --bg-panel: #1c1c3d;
+  --accent: #00e0c6;
+  --accent-2: #ff4d94;
+  --accent-3: #6af348;
+  --text: #f2f2fb;
+  --text-muted: #b8b8d9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: var(--text);
+  background: linear-gradient(135deg, #12122b 0%, #241b4d 50%, #12122b 100%);
+  min-height: 100vh;
+}
+
+/* ===== Header / hero ===== */
+header {
+  text-align: center;
+  padding: 60px 20px 30px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3rem;
+  background: linear-gradient(90deg, var(--accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+header p {
+  margin: 12px 0;
+  font-size: 1.15rem;
+  color: var(--text-muted);
+}
+
+/* ===== Buttons ===== */
+.buttons {
+  text-align: center;
+  margin: 20px 0 50px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+button {
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #12122b;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  background: linear-gradient(135deg, var(--accent), var(--accent-3));
+  box-shadow: 0 6px 18px rgba(124, 92, 255, 0.4);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(255, 77, 148, 0.5);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* ===== Content cards ===== */
+.section {
+  max-width: 900px;
+  margin: 0 auto 30px;
+  padding: 30px;
+  background: rgba(28, 28, 61, 0.85);
+  border-left: 5px solid var(--accent);
+  border-radius: 14px;
+}
+
+.section h2 {
+  margin-top: 0;
+  color: var(--accent);
+}
+
+.section p {
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 30px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
