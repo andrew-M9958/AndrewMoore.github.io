@@ -3,8 +3,7 @@
   --bg-dark: #12122b;
   --bg-panel: #1c1c3d;
   --accent: #00e0c6;
-  --accent-2: #31ec0b;
-  --accent-3: #6af348;
+  --accent-2: #6af348;
   --text: #f2f2fb;
   --text-muted: #b8b8d9;
 }
@@ -31,7 +30,7 @@ header h1 {
   margin: 0;
   font-size: 3rem;
   text-align: center;
-  background: linear-gradient(90deg, var(--accent));
+  background: linear-gradient(90deg, var(--accent-2));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -63,7 +62,7 @@ button {
   border: none;
   border-radius: 999px;
   cursor: pointer;
-  background: var(--accent-3);
+  background: var(--accent);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
@@ -86,13 +85,47 @@ button:active {
 }
 
 .section h2 {
-  text-align: center;
   margin-top: 0;
-  color: var(--accent-3);
+  color: var(--accent-2);
 }
 
 .section p {
-  text-align: center;
   color: var(--text-muted);
   line-height: 1.6;
+}
+
+/* ===== Links ===== */
+.links {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.links a {
+  display: inline-block;
+  padding: 10px 22px;
+  color: #12122b;
+  font-weight: 600;
+  text-decoration: none;
+  background: var(--accent);
+  border-radius: 999px;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.links a:hover {
+  transform: translateY(-3px);
+  background: var(--accent-2);
+}
+
+/* ===== Project GIF ===== */
+.project-gif {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
 }
