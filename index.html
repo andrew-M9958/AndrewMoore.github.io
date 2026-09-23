@@ -1,25 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div style="text-align: center;">
+    <header>
       <h1>Andrew Moore</h1>
       <p>Computer Games Application Development Undergraduate</p>
+    </header>
+
+    <div class="buttons">
+      <button type="button" onclick="alert('show project section')">projects</button>
+      <button type="button" onclick="alert('Show about me section')">about me</button>
+      <button type="button" onclick="alert('Show CV section')">CV</button>
     </div>
-    <p>Hi, I'm a developer passionate about web and data projects.</p>
-    
-    <button type = "button" onclick =
-      "alert('Welcome to GeeksforGeeks')"> 
-      Click Here 
-    </button> 
-    
-    <button type = "button" onclick =
-      "alert('Welcome to GeeksforGeeks')"> 
-      Click Here 
-    </button> 
-    
+
+    <main>
+      <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>Hi, I'm a developer passionate about web and data projects.</p>
+      </section>
+
+      <section id="projects" class="section">
+        <h2>Projects</h2>
+        <p>Here are some of the projects I've been working on:</p>
+        <ul>
+          <li>Game Prototype</li>
+          <li>Data Dashboard</li>
+          <li>Portfolio Website</li>
+        </ul>
+      </section>
+
+      <section id="cv" class="section">
+        <h2>CV</h2>
+        <p>Computer Games Application Development undergraduate with skills in C#, C++, HTML, CSS and JavaScript.</p>
+      </section>
+    </main>
   </body>
 </html>
